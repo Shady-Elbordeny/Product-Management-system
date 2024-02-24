@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>CRUDS</title>
+</head>
+
+<body>
+
+
+  <div class="head">
+    <h2 id="header">CRUDS</h2>
+    <p id="sub-header">Create Read Update Delete Search</p>
+  </div>
+
+  <div class="inputs">
+    <form action="">
+      <input type="text" id="title" placeholder="title">
+      <div class="prices">
+        <input type="number" id="price" placeholder="Price">
+        <input type="number" id="taxes" placeholder="taxes">
+        <input type="number" id="ads" placeholder="ads">
+        <input type="number" id="discount" placeholder="discount">
+        <small id="total" class="not-active"></small>
+      </div>
+      <input type="number" id="count" placeholder="count">
+      <input type="text" id="category" placeholder="category">
+      <button id="submit">Create</button>
+    </form>
+  </div>
+  <div class="output">
+    <div class="searchblock">
+      <input type="text" onkeyup="searchForProducts(this.value)" id="search" placeholder="Search">
+      <div class="searchbtns">
+        <button onclick="getsearchMode(this.id)" id="searctitle">Search by Title </button>
+        <button onclick="getsearchMode(this.id)" id="searchcategory">Search by Category</button>
+      </div>
+    </div>
+    <div id="delete-all">
+    </div>
+    <table>
+      <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <h3>Developed by <span>Shady Elbordeny</span> </h3>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
